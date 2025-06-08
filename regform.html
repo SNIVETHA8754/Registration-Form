@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <div style="position: relative;">
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <span class="validation-indicator" id="nameIndicator"></span>
+                </div>
+                <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <div style="position: relative;">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <span class="validation-indicator" id="emailIndicator"></span>
+                </div>
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div style="position: relative;">
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <span class="validation-indicator" id="passwordIndicator"></span>
+                </div>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn" disabled>
+                Register
+            </button>
+
+            <div class="success-message" id="successMessage">
+                Registration successful! 🎉
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
